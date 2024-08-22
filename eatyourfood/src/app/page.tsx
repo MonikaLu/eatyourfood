@@ -13,11 +13,12 @@ export default function Home() {
 
     try {
       const formData = new FormData(event.currentTarget);
-      const response = await fetch("TODO", {
-        method: "POST",
-        body: formData,
-      });
-      const data = await response.json();
+      // const response = await fetch("TODO", {
+      //   method: "POST",
+      //   body: formData,
+      // });
+      // const data = await response.json();
+      console.log(formData);
     } catch (error) {
       console.error(error);
     } finally {
@@ -26,9 +27,10 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen flex-row flex justify-center p-24 bg-background">
+    <main className="min-h-screen p-24 bg-background flex flex-col justify-center items-center">
+      <h1 className="text-title1 text-headline">Eat Your Food</h1>
       <form onSubmit={onSubmit}>
-        <div className="h-full flex-col flex gap-y-5">
+        <div className="h-full w-full flex-col gap-y-5 flex">
           <div>
             <Label content="Username:" htmlFor="username" />
             <Input type="text" name="username" />
