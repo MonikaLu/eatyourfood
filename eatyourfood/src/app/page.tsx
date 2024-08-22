@@ -26,7 +26,7 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen flex-row p-24 bg-background">
+    <main className="min-h-screen flex-row flex justify-center p-24 bg-background">
       <form onSubmit={onSubmit}>
         <div className="h-full flex-col flex gap-y-5">
           <div>
