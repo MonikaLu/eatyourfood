@@ -25,6 +25,10 @@ const config: Config = {
         tertiary: "#e16162",
         highlight: "#f9bc60",
       },
+      fontSize: {
+        title1: "3rem",
+        title2: "1rem",
+      },
     },
   },
   plugins: [],
