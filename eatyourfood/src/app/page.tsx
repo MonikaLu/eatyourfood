@@ -37,9 +37,12 @@ export default function Home() {
           </div>
           <div>
             <Label content="Password:" htmlFor="password" />
-            <Input type="text" name="password" />
+            <Input type="password" name="password" />
           </div>
-          <Button content="Log in" />
+          <div className="flex flex-row justify-between">
+            <Button content="Log In" />
+            <Button content="Sign Up" />
+          </div>
         </div>
       </form>
     </main>
