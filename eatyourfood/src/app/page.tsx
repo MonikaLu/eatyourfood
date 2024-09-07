@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import Button from "./ui/button";
 import Input from "./ui/Input";
 import Label from "./ui/Label";
+import Link from "next/link";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -28,6 +29,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen p-24 bg-background flex flex-col justify-center items-center">
+      <Link href="/home">Home</Link>
       <h1 className="text-title1 text-headline">Eat Your Food</h1>
       <form onSubmit={onSubmit}>
         <div className="h-full w-full flex-col gap-y-5 flex">
