@@ -25,32 +25,26 @@ export default function Home() {
 
   return (
     <>
-      <main className="min-h-screen bg-background">
-        <div className="w-full">
-          <Header />
-        </div>
-
-        <div className="flex flex-col justify-center items-center min-h-[calc(100vh-100px)]">
-          <div className="w-full max-w-md flex flex-col gap-y-5">
-            <form onSubmit={onSubmit}>
-              <div className="flex flex-col gap-y-5">
-                <div>
-                  <Label content="Username:" htmlFor="username" />
-                  <Input type="text" name="username" />
-                </div>
-                <div>
-                  <Label content="Password:" htmlFor="password" />
-                  <Input type="password" name="password" />
-                </div>
-                <div className="flex flex-row justify-between">
-                  <Button content="Log In" />
-                  <Button content="Sign Up" />
-                </div>
+      <div className="flex flex-col justify-center items-center min-h-[calc(100vh-100px)]">
+        <div className="w-full max-w-md flex flex-col gap-y-5">
+          <form onSubmit={onSubmit}>
+            <div className="flex flex-col gap-y-5">
+              <div>
+                <Label content="Username:" htmlFor="username" />
+                <Input type="text" name="username" />
               </div>
-            </form>
-          </div>
+              <div>
+                <Label content="Password:" htmlFor="password" />
+                <Input type="password" name="password" />
+              </div>
+              <div className="flex flex-row justify-between">
+                <Button content="Log In" />
+                <Button content="Sign Up" />
+              </div>
+            </div>
+          </form>
         </div>
-      </main>
+      </div>
     </>
   );
 }
